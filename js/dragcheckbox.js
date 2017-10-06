@@ -1,8 +1,12 @@
 $(function () {	
+	if (window.innerWidth < 748) {
+		return
+	} else {
 	$('.time')
-	.mousedown(rangeMouseDown)
-	.mouseup(rangeMouseUp)
-	.mousemove(rangeMouseMove);
+		.mousedown(rangeMouseDown)
+		.mouseup(rangeMouseUp)
+		.mousemove(rangeMouseMove);
+	}	
 });
 
 var dragStart = 0;
